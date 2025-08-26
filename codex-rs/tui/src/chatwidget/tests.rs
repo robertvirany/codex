@@ -1475,7 +1475,6 @@ fn local_bang_exec_lists_files() {
     chat.bottom_pane.handle_paste(typed);
     chat.handle_key_event(KeyEvent::new(KeyCode::Enter, KeyModifiers::NONE));
 
-
     let op = op_rx.try_recv().expect("expected LocalExec op emitted");
     let raw_cmd = match op {
         Op::LocalExec { raw_cmd } => raw_cmd,
