@@ -2,9 +2,9 @@ use std::io::BufRead;
 use std::path::Path;
 use std::time::Duration;
 
+use crate::AuthManager;
 use bytes::Bytes;
-use codex_login::AuthManager;
-use codex_login::AuthMode;
+use codex_protocol::mcp_protocol::AuthMode;
 use eventsource_stream::Eventsource;
 use futures::prelude::*;
 use reqwest::StatusCode;
