@@ -6,7 +6,7 @@ use codex_core::protocol::ConversationHistoryResponseEvent;
 use codex_core::protocol::EventMsg;
 use codex_core::protocol::InputItem;
 use codex_core::protocol::Op;
-use codex_login::CodexAuth;
+use codex_core::CodexAuth;
 use core_test_support::load_default_config_for_test;
 use core_test_support::wait_for_event;
 use tempfile::TempDir;
